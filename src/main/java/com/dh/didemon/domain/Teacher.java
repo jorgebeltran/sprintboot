@@ -3,6 +3,10 @@ package com.dh.didemon.domain;
 public class Teacher {
 private  long id;
 
+    public Teacher() {
+
+    }
+
     private  String name;
     public Teacher(long id, String name){
         this.id = id;
