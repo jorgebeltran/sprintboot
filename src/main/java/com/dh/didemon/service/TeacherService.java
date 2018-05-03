@@ -50,6 +50,7 @@ public class TeacherService {
     public void deleteteacher(int id){
         listTeacher.remove(id);
     }
+
     public void deleteteacher(String id){
         //listTeacher.remove(id);
          teacherRepository.deleteById(id);
@@ -60,10 +61,10 @@ public class TeacherService {
         //get  a teacher by id form DB
         return listTeacher.get(id);
     }
+
     public Teacher getTeacher(String id) {
         //get  a teacher by id form DB
         //return listTeacher.get(id);
-        //return  teacherRepository.
         return  teacherRepository.findTeacherById(id);
         //return null;
     }
