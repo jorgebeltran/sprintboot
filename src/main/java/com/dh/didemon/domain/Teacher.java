@@ -1,23 +1,29 @@
 package com.dh.didemon.domain;
 
-public class Teacher {
-private  long id;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+
+public class Teacher {
+
+    @Id
+    private String id;
+    private  long ci;
     public Teacher() {
 
     }
 
     private  String name;
     public Teacher(long id, String name){
-        this.id = id;
+        this.ci = id;
         this.name = name;
     }
-    public long getId() {
-        return id;
+    public long getCi() {
+        return ci;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setCi(long ci) {
+        this.ci = ci;
     }
 
     public String getName() {
@@ -28,4 +34,11 @@ private  long id;
         this.name = name;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 }

@@ -14,7 +14,6 @@ public class DiDemonApplication {
 		return "Hello World!";
 	}
 
-
 	public static void main(String[] args) {
 		SpringApplication.run(DiDemonApplication.class, args);
 	}
